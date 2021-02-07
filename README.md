@@ -6,19 +6,27 @@ Readme will follow as project makes progress.
 
 ## Install
 
-`pip install ...`
+There is no install available at the moment. If you want to play around with the code, just download the Jupyter notebooks. Requirements: `opencv-python`, `fastcore`, `PIL`.
 
 ## How to use
 
-Fill me in please! Don't forget code examples:
+At the moment, Blurry can be used to blur faces in single photos.
 
 ```python
-1+1
+img = load_img('test_images/group_closer.jpg')
+result = anonymize(img, factor=1.5)
+show_inline_img(result)
 ```
 
 
+![png](docs/images/output_5_0.png)
 
 
-    2
+To play with live video from webcam, go to the 01_webcam.ipynb notebook.
 
-
+## To Do
+- Command line tool to process photos
+- More options (pixelate/blur)
+- Improve aesthetics
+- A way to manually blur parts of the image
+- Detect and blur text

@@ -2,7 +2,8 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"blur": "00_core.ipynb",
+index = {"show_inline_img": "00_core.ipynb",
+         "blur": "00_core.ipynb",
          "find_faces": "00_core.ipynb",
          "blur_areas": "00_core.ipynb",
          "anonymize": "00_core.ipynb",
