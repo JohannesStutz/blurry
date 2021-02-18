@@ -14,8 +14,8 @@ At the moment, Blurry can be used to blur faces in single photos.
 
 ```python
 img = load_img('test_images/group_closer.jpg')
-result = anonymize(img, factor=1.5)
-show_inline_img(result)
+result = anonymize(img, factor=1.5, mode='pixelate')
+show_cv2(result)
 ```
 
 
