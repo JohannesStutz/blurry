@@ -8,9 +8,11 @@ index = {"show_cv2": "00_core.ipynb",
          "find_faces": "00_core.ipynb",
          "blur_areas": "00_core.ipynb",
          "anonymize": "00_core.ipynb",
-         "load_img": "00_core.ipynb"}
+         "load_img": "00_core.ipynb",
+         "in_notebook": "02_cli.ipynb"}
 
-modules = ["core.py"]
+modules = ["core.py",
+           "__main__.py"]
 
 doc_url = "https://JohannesStutz.github.io/blurry/"
 

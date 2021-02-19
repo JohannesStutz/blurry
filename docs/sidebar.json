@@ -2,6 +2,7 @@
   "blurry": {
     "Overview": "/",
     "Blurry": "/core",
-    "Webcam": "/webcam"
+    "Webcam": "/webcam",
+    "Command Line Interface for Blurry": "/cli"
   }
 }
