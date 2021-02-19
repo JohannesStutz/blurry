@@ -2,7 +2,6 @@
 
 title: Webcam
 
-
 keywords: fastai
 sidebar: home_sidebar
 
@@ -94,6 +93,44 @@ nb_path: "01_webcam.ipynb"
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">error</span>                                     Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-3-d08e2165d27a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">     17</span>     <span class="ansi-red-intense-fg ansi-bold"># flip frame to feel more &#39;natural&#39; to webcam</span>
+<span class="ansi-green-fg">     18</span>     frame <span class="ansi-yellow-intense-fg ansi-bold">=</span> cv2<span class="ansi-yellow-intense-fg ansi-bold">.</span>flip<span class="ansi-yellow-intense-fg ansi-bold">(</span>frame<span class="ansi-yellow-intense-fg ansi-bold">,</span> flipCode <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 19</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>frame <span class="ansi-yellow-intense-fg ansi-bold">=</span> anonymize<span class="ansi-yellow-intense-fg ansi-bold">(</span>frame<span class="ansi-yellow-intense-fg ansi-bold">,</span> convert2rgb<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">False</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     20</span>     cv2<span class="ansi-yellow-intense-fg ansi-bold">.</span>imshow<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;frame&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> frame<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     21</span>     <span class="ansi-red-intense-fg ansi-bold"># save the frames to out file</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\OneDrive\Coding\blurry\blurry\core.py</span> in <span class="ansi-cyan-fg">anonymize</span><span class="ansi-blue-intense-fg ansi-bold">(img, factor, mode, convert2rgb)</span>
+<span class="ansi-green-fg">     71</span> <span class="ansi-red-intense-fg ansi-bold"># Cell</span>
+<span class="ansi-green-fg">     72</span> <span class="ansi-green-intense-fg ansi-bold">def</span> anonymize<span class="ansi-yellow-intense-fg ansi-bold">(</span>img<span class="ansi-yellow-intense-fg ansi-bold">,</span> factor<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> mode<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#39;blur&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> convert2rgb<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">False</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">-&gt;</span>np<span class="ansi-yellow-intense-fg ansi-bold">.</span>ndarray<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 73</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>faces <span class="ansi-yellow-intense-fg ansi-bold">=</span> find_faces<span class="ansi-yellow-intense-fg ansi-bold">(</span>img<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     74</span>     <span class="ansi-green-intense-fg ansi-bold">if</span> mode <span class="ansi-yellow-intense-fg ansi-bold">==</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;pixelate&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">     75</span>         blur_func <span class="ansi-yellow-intense-fg ansi-bold">=</span> pixelate
+
+<span class="ansi-green-intense-fg ansi-bold">~\OneDrive\Coding\blurry\blurry\core.py</span> in <span class="ansi-cyan-fg">find_faces</span><span class="ansi-blue-intense-fg ansi-bold">(img)</span>
+<span class="ansi-green-fg">     42</span>     <span class="ansi-blue-intense-fg ansi-bold">&#34;Finds faces in a picture and returns tuples of (x, y, w, h) for each face&#34;</span>
+<span class="ansi-green-fg">     43</span>     face_cascade <span class="ansi-yellow-intense-fg ansi-bold">=</span> cv2<span class="ansi-yellow-intense-fg ansi-bold">.</span>CascadeClassifier<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;haarcascade_frontalface_default.xml&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 44</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>gray <span class="ansi-yellow-intense-fg ansi-bold">=</span> cv2<span class="ansi-yellow-intense-fg ansi-bold">.</span>cvtColor<span class="ansi-yellow-intense-fg ansi-bold">(</span>img<span class="ansi-yellow-intense-fg ansi-bold">,</span> cv2<span class="ansi-yellow-intense-fg ansi-bold">.</span>COLOR_BGR2GRAY<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     45</span>     faces <span class="ansi-yellow-intense-fg ansi-bold">=</span> face_cascade<span class="ansi-yellow-intense-fg ansi-bold">.</span>detectMultiScale<span class="ansi-yellow-intense-fg ansi-bold">(</span>gray<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">1.1</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">4</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     46</span>     <span class="ansi-green-intense-fg ansi-bold">return</span> faces
+
+<span class="ansi-red-intense-fg ansi-bold">error</span>: OpenCV(4.5.1) C:\Users\appveyor\AppData\Local\Temp\1\pip-req-build-oduouqig\opencv\modules\imgproc\src\color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function &#39;cv::cvtColor&#39;
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

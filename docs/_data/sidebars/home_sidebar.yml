@@ -11,10 +11,10 @@ entries:
       url: /
     - output: web,pdf
       title: Blurry
-      url: core.html
+      url: /core
     - output: web,pdf
       title: Webcam
-      url: webcam.html
+      url: /webcam
     output: web
     title: blurry
   output: web

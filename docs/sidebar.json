@@ -1,7 +1,7 @@
 {
   "blurry": {
     "Overview": "/",
-    "Blurry": "core.html",
-    "Webcam": "webcam.html"
+    "Blurry": "/core",
+    "Webcam": "/webcam"
   }
 }

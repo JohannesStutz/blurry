@@ -6,13 +6,13 @@ Readme will follow as project makes progress.
 
 ## Install
 
-There is no install available at the moment. If you want to play around with the code, just download the Jupyter notebooks. Requirements: `opencv-python`, `fastcore`, `PIL`.
+There is no install available at the moment. If you want to play around with the code, just download the Jupyter notebooks. Requirements: `opencv-python`, `PIL`.
 
 ## How to use
 
 At the moment, Blurry can be used to blur faces in single photos.
 
-```python
+```
 img = load_img('test_images/group_closer.jpg')
 result = anonymize(img, factor=1.5, mode='pixelate')
 show_cv2(result)
