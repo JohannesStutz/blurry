@@ -8,8 +8,7 @@ index = {"show_cv2": "00_core.ipynb",
          "find_faces": "00_core.ipynb",
          "blur_areas": "00_core.ipynb",
          "anonymize": "00_core.ipynb",
-         "load_img": "00_core.ipynb",
-         "test_bulk": "00_core.ipynb"}
+         "load_img": "00_core.ipynb"}
 
 modules = ["core.py"]
 
