@@ -10,17 +10,13 @@ There is no install available at the moment. If you want to play around with the
 
 ## How to use
 
-At the moment, Blurry can be used to blur faces in single photos.
+At the moment Blurry can be used to blur faces in single photos.
 
 ```python
 img = load_img('test_images/group_closer.jpg')
 result = anonymize(img, factor=1.5, mode='pixelate')
 show_cv2(result)
 ```
-
-
-![png](docs/images/output_5_0.png)
-
 
 To play with live video from webcam, go to the 01_webcam.ipynb notebook.
 
