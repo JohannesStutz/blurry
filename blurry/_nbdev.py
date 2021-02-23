@@ -10,7 +10,8 @@ index = {"show_cv2": "00_core.ipynb",
          "anonymize": "00_core.ipynb",
          "load_img": "00_core.ipynb",
          "in_notebook": "02_cli.ipynb",
-         "uploaded_file": "03_streamlit.ipynb"}
+         "uploaded_file": "03_streamlit.ipynb",
+         "get_image_download_link": "03_streamlit.ipynb"}
 
 modules = ["core.py",
            "__main__.py",
