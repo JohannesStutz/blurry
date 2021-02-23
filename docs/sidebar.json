@@ -3,7 +3,6 @@
     "Overview": "/",
     "Blurry": "/core",
     "Webcam": "/webcam",
-    "Command Line Interface for Blurry": "/cli",
-    "Streamlit App": "/streamlit"
+    "Command Line Interface for Blurry": "/cli"
   }
 }

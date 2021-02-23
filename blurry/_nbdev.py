@@ -9,13 +9,12 @@ index = {"show_cv2": "00_core.ipynb",
          "blur_areas": "00_core.ipynb",
          "anonymize": "00_core.ipynb",
          "load_img": "00_core.ipynb",
-         "in_notebook": "02_cli.ipynb",
-         "uploaded_file": "03_streamlit.ipynb",
-         "get_image_download_link": "03_streamlit.ipynb"}
+         "uploaded_file": "00_core.ipynb",
+         "get_image_download_link": "00_core.ipynb",
+         "in_notebook": "02_cli.ipynb"}
 
 modules = ["core.py",
-           "__main__.py",
-           "streamlit.py"]
+           "__main__.py"]
 
 doc_url = "https://JohannesStutz.github.io/blurry/"
 

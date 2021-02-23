@@ -18,9 +18,6 @@ entries:
     - output: web,pdf
       title: Command Line Interface for Blurry
       url: /cli
-    - output: web,pdf
-      title: Streamlit App
-      url: /streamlit
     output: web
     title: blurry
   output: web
