@@ -1,9 +1,9 @@
 {
   "blurry": {
     "Overview": "/",
-    "Blurry": "core.html",
-    "Webcam": "webcam.html",
-    "Command Line Interface for Blurry": "cli.html",
-    "Streamlit App": "streamlit.html"
+    "Blurry": "/core",
+    "Webcam": "/webcam",
+    "Command Line Interface for Blurry": "/cli",
+    "Streamlit App": "/streamlit"
   }
 }

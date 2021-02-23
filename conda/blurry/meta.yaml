@@ -1,0 +1,38 @@
+package:
+  name: blurry
+  version: 0.0.5
+source:
+  sha256: de14c621688f52a1b96b04b31951cdd01ccf0d216def0c1cf96a48b4425aa3cd
+  url: https://files.pythonhosted.org/packages/36/62/032d16a698eb3f0a53c6df11a31d6557fd0dedb1796ebca366dd496a597b/blurry-0.0.5.tar.gz
+about:
+  dev_url: https://JohannesStutz.github.io
+  doc_url: https://JohannesStutz.github.io
+  home: https://JohannesStutz.github.io
+  license: Apache Software
+  license_family: APACHE
+  summary: Automatically blur faces in a photo for better privacy.
+build:
+  noarch: python
+  number: '0'
+  script: '{{ PYTHON }} -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - JohannesStutz
+requirements:
+  host:
+  - pip
+  - python
+  - packaging
+  - opencv-python
+  - Pillow
+  - matplotlib
+  run:
+  - pip
+  - python
+  - packaging
+  - opencv-python
+  - Pillow
+  - matplotlib
+test:
+  imports:
+  - blurry

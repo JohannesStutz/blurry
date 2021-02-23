@@ -11,16 +11,16 @@ entries:
       url: /
     - output: web,pdf
       title: Blurry
-      url: core.html
+      url: /core
     - output: web,pdf
       title: Webcam
-      url: webcam.html
+      url: /webcam
     - output: web,pdf
       title: Command Line Interface for Blurry
-      url: cli.html
+      url: /cli
     - output: web,pdf
       title: Streamlit App
-      url: streamlit.html
+      url: /streamlit
     output: web
     title: blurry
   output: web

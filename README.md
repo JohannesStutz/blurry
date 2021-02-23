@@ -18,6 +18,10 @@ result = anonymize(img, factor=1.5, mode='pixelate')
 show_cv2(result)
 ```
 
+
+![png](docs/images/output_5_0.png)
+
+
 To play with live video from webcam, go to the 01_webcam.ipynb notebook.
 
 ## To Do
