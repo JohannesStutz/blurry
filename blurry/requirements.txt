@@ -1,2 +1,6 @@
-opencv-python
-Pillow
+matplotlib==3.3.4
+opencv_python==4.5.1.48
+numpy==1.19.2
+fastcore==1.3.19
+ipython==7.20.0
+Pillow==8.1.0
