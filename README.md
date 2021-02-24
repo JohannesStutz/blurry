@@ -4,6 +4,12 @@
 
 Readme will follow as project makes progress.
 
+## Web App
+
+You can try an interactive version of this script here:
+
+https://share.streamlit.io/johannesstutz/blurry/blurry/core.py
+
 ## Install
 
 There is no install available at the moment. If you want to play around with the code, just download the Jupyter notebooks. Requirements: `opencv-python`, `PIL`.
@@ -19,7 +25,7 @@ show_cv2(result)
 ```
 
 
-![png](docs/images/output_5_0.png)
+![png](docs/images/output_6_0.png)
 
 
 To play with live video from webcam, go to the 01_webcam.ipynb notebook.
